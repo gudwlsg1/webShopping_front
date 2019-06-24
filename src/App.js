@@ -5,6 +5,7 @@ import {Provider} from "mobx-react";
 import './App.css'
 import User from './User'
 import Stores from './Stores';
+import Category from "./Category";
 
 const App = () => (
     <Provider stores={Stores}>
@@ -18,6 +19,7 @@ const App = () => (
 
             <section className='app-body'>
                 <Route path='/user/:command?' exact component={User}/>
+                <Category />
             </section>
         </BrowserRouter>
     </Provider>

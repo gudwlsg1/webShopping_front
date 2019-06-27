@@ -6,6 +6,7 @@ import './App.css'
 import User from './User'
 import Stores from './Stores';
 import Category from "./Category";
+import Product from "./Product";
 
 const App = () => (
     <Provider stores={Stores}>
@@ -19,7 +20,8 @@ const App = () => (
 
             <section className='app-body'>
                 <Route path='/user/:command?' exact component={User}/>
-                <Category />
+                <Route path='/' exact  component={Category}/>
+                <Route path='/product/:command/:param' exact component={Product} />
             </section>
         </BrowserRouter>
     </Provider>

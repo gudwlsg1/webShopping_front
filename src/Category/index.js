@@ -12,6 +12,7 @@ class Category extends Component {
 
     render() {
         let c = this.props.stores.CategoryStore;
+
         return (
             <div>
                 {c.items && <CategoryList items={c.items}/> }

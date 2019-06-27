@@ -1,0 +1,15 @@
+.product-view{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    display: inline-block;
+}
+
+.product-view div {
+    text-align: center;
+}
+
+.product-view img{
+    height: 200px;
+    width: 200px;
+}

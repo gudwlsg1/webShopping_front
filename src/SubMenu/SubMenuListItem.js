@@ -1,4 +1,5 @@
 import React, {Component } from 'react';
+import {Link} from 'react-router-dom';
 import {inject, observer} from "mobx-react";
 
 @inject('stores')
@@ -6,10 +7,11 @@ import {inject, observer} from "mobx-react";
 class SubMenuListItem extends Component {
     render() {
         let {subMenu} = this.props;
+        let product = `/product/submenu/${subMenu.id}`;
         return (
-            <div>
-                <li>{subMenu.name}</li>
-            </div>
+            <Link to={product}>
+                    <li>{subMenu.name}</li>
+            </Link>
         );
     }
 };

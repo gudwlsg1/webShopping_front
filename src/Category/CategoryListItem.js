@@ -1,5 +1,6 @@
 import React, {Component } from 'react';
 import {inject, observer} from "mobx-react";
+import {Link} from 'react-router-dom';
 
 import SubMenuList from '../SubMenu/SubMenuList';
 
@@ -9,28 +10,20 @@ class CategoryListItem extends Component {
     render() {
         let {category} = this.props;
         let s = this.props.stores.SubMenuStore;
+        let product = `/product/category/${category.id}`;
         return (
             <div>
-                <li onMouseOver={this.selectSubMenu} onMouseOut={this.clearSubMenu}>{category.name}
-                    <div>{s.items && <SubMenuList items={s.items} />}</div>
-                </li>
-
+                <ul onMouseEnter={this.selectSubMenu}>
+                    <Link to={product}> {category.name}</Link>
+                    {s.items && <SubMenuList items={s.items} categoryId={category.id} />}
+                </ul>
             </div>
         );
     }
     selectSubMenu = async ()=> {
         let categoryId = this.props.category.id;
-
-        console.log();
-
-        if(await this.props.stores.SubMenuStore.getSubItems(categoryId)){
-            console.log(this.props.stores.SubMenuStore.items);
-        }
-    }
-
-    clearSubMenu = ()=> {
-        this.props.stores.SubMenuStore.items = null;
-    }
-};
+        await this.props.stores.SubMenuStore.getSubItems(categoryId);
+    };
+}
 
 export default CategoryListItem;

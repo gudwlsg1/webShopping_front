@@ -1,34 +1,11 @@
-.app-header {
-    background: salmon;
-    left: 0;
-    top: 0;
-    right: 0;
-    position: fixed;
-}
 .category-list {
     list-style-type: none;
     align-items: center;
 }
-.category-list li {
-    float: left;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.category-list li a {
-    color: white;
+.category-list ul a{
+    display: inline-block;
     text-decoration: none;
-    padding: 16px;
-    display: block;
-    border-bottom: 3px solid transparent;
-}
-.category-list li a:hover {
-    color: yellow;
-    border-bottom: 3px solid yellow;
-}
-.app-body {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 100px;
+    float: left;
+    margin-right: 60px;
+    cursor: pointer;
 }

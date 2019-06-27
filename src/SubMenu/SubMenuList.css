@@ -1,0 +1,16 @@
+.subMenu-list {
+    list-style-type: none;
+    align-items: center;
+}
+.subMenu-list li {
+    float: left;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.subMenu-list a {
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    border-bottom: 3px solid transparent;
+}

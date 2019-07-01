@@ -1,0 +1,51 @@
+.basket-view div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.basket-view {
+    width: 1200px;
+}
+
+.basket-view img {
+    width: 60px;
+    height: 60px;
+}
+
+.basket-info {
+    text-align: center;
+}
+
+.basket-info ul{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.basket-header {
+    margin: 50px 150px 30px 150px;
+    border: 1px solid black;
+}
+
+.product-info div{
+    display: inline-block;
+}
+
+.orderProduct {
+    text-align: left;
+    width: 400px;
+    margin-left: 80px;
+}
+
+.price {
+    width: 200px;
+}
+
+.orderNumber {
+    width: 200px;
+}
+
+.sum {
+    width: 150px;
+}

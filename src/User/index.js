@@ -13,7 +13,7 @@ class User extends Component {
         if(this.props.match && this.props.match.params.command === 'signup'){
             return <Signup />
         }
-        else if(userData == null){
+        else if(userData === null){
             return <Login />
         }
         return (

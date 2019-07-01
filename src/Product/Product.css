@@ -9,7 +9,41 @@
     text-align: center;
 }
 
+.product-view a {
+    color: black;
+    text-decoration: none;
+}
+
 .product-view img{
     height: 200px;
     width: 200px;
+}
+
+.detail-product{
+    font-size: 30px;
+    width: 1000px;
+    text-align: center;
+    float: right;
+    border: black 1px solid;
+    margin-right: 20px;
+}
+
+.detail-product div{
+    margin-top: 10px;
+}
+
+.product-info {
+    text-align: left;
+    display: inline-block;
+}
+
+.detail-product img {
+    width: 200px;
+    height: 280px;
+    left: 150px;
+}
+
+.preface {
+    border: black 1.5px solid;
+    background: #f0f0f0;
 }

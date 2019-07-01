@@ -1,8 +1,5 @@
-.category-list {
-    list-style-type: none;
-    align-items: center;
-}
 .category-list ul a{
+    color: black;
     display: inline-block;
     text-decoration: none;
     float: left;

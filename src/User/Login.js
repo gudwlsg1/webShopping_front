@@ -15,11 +15,10 @@ class Login extends Component {
 
     render(){
         if(this.state.goToProfile){
-            return <Redirect to='/user' />;
+            return <Redirect to='/user'/>;
         }
 
         if(this.state.goToSignup){
-            console.log("회원가입");
             return <Redirect to='/user/signup' />;
         }
         return(

@@ -35,7 +35,6 @@ class UserStore {
                     3000
                 );*/
                 this.user_data = response.data;
-                console.log(response.data);
                 return true;
             }
             return false;
